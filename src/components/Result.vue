@@ -1,14 +1,15 @@
 <template>
 <div>
-    <p>Counter is: {{ counter2 }}</p>
-    <p>Name is: {{ name }}</p>
-
-
+    <p>Counter is: {{ counter }}</p>
 </div>
 </template>
 
 <script>
     export default {
-        props: ['counter2', 'name']
+        computed: {
+            counter(){
+                return this.$store.state.counter;
+            }
+        }
     }
 </script>
