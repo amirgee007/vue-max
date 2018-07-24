@@ -9,7 +9,7 @@
     export default {
         methods: {
             increment() {
-                this.$emit('updated', 1);
+                this.$emit('updated', 2);
             },
             decrement() {
                 this.$emit('updated', -1);
