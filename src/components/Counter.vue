@@ -1,13 +1,13 @@
 <template>
     <div>
-        <button class="btn btn-primary" @click="increment">Increment</button>
+        <button class="btn btn-primary" @click="increment(10)">Increment</button>
         <button class="btn btn-primary" @click="decrement">Decrement</button>
     </div>
 </template>
 
 <script>
     export default {
-        methods: {
+        methods: { 
             increment() {
                 this.$store.state.counter+=1;
             },
